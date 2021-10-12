@@ -7,6 +7,8 @@ $result = shell_exec($command);
 
 echo $result;
 
+echo "<br>";
+
 if (strpos($result, "Destination Host Unreachable")){
     echo $address." is DOWN";
 }
